@@ -1,0 +1,238 @@
+:root{
+    --rellenoMarronOscuro: #e6a756;
+    --rellenoMarronClaro: rgb(230 167 86);
+}
+
+
+/* ========= GLOBALES ========= */
+body{
+    font-family: 'Lato', sans-serif;
+    
+    /* Fondo de página */
+    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    /* Overflow - X */
+    overflow-x: hidden;
+}
+
+p {
+    line-height: 1.75;
+}
+img{
+    max-width: 100%;
+}
+
+/* ========= UTILIDADES ========= */
+.radius{
+    border-radius: 2rem;
+}
+
+
+
+
+/* HEADER */
+header{
+    z-index: 3;
+    position: relative;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+    
+    /* background-image: url(../img/cafeteria-1.jpg);
+    background-position: center center;
+    background-size: cover; */
+}
+
+.site-title{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1; 
+}
+.site-title h1{
+    font-size: 3.8rem;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.site-title h1 span{
+    font-size: 5rem;
+    font-weight: 900;
+}
+.to-home:hover{
+    color: ;
+    text-decoration: none;   
+}
+/* NAV */
+.barra{
+    background-color: rgb(27, 27, 27);
+}
+
+@media (min-width: 768px) {
+    .barra-elements{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+    
+}
+
+.link-barra a{
+    text-align: center;
+    color: #FFFFFF!important;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all .3s ease-in-out;
+}
+
+.link-barra a:hover{
+    background-color: var(--rellenoMarronClaro);
+}
+
+/* nav sections */
+.logo-nav{
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+.logo-nav h1{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.logo-nav h1 span{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+/* SLIDER */
+
+
+@media (min-width: 768px) {
+    .grid-home{
+    display: grid;
+    grid-template-columns: 45% 65%;
+}
+}
+/* LANDING */
+
+.nosotros{
+    background-color: #FFFFFF;
+}
+
+.section-title{
+    font-weight: 700;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1rem;
+    padding-top: 1rem;    
+}
+.section-title:after {
+    content: " ";
+    display: block;
+    background-color: #666;
+    height: 2px;
+    width: 50px;
+    margin: 35px auto;
+}
+
+@media (min-width: 768px) {
+    .grid-nosotros{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        transition: .8s ease-in-out;
+    }
+    .grid-nosotros img:hover{
+        transform: scale(1.1);
+
+    }
+}
+@media (max-width: 767px) {
+    .grid-nosotros img{
+        margin: .5rem 0;
+    }
+}
+
+.separador-landing{
+    background-image: url(../img/products.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 35vh;
+}
+
+.descubre{
+    background-color: #FFFFFF;
+    margin-bottom: 6rem;
+}
+
+/* FOOTER */
+.footer{
+    height: 85vh;
+    background-color: #1b171c ;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 0;
+}
+
+.footer .home-g-title{
+    padding-top: 2rem;
+}
+
+/* .playlist_p:hover > img {
+    filter: blur(2px);
+  } */
+
+
+/* === NUESTROS CAFES === */
+
+.img-blog{
+    background-image: url(../img/chica-tomando.jpg);
+    background-size: cover;
+    background-position: center 58%;
+    height: 38vh;
+}
+
+.nuestros-cafes{
+    background-color: #FFFFFF;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    /* .grid-blog{
+        display: grid;
+        grid-template-columns: 35% 65%;
+    } */
+    .grid-nuestros-cafes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.cafe-item{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 .5rem;
+    align-items: flex-start;
+}
+.cafe-item img{
+    max-width: 80%;
+}
+.cafe-descripcion{
+    font-size: 1rem;
+}
+.cafe-descripcion h4{
+    font-weight: bold;
+}
+.cafe-descripcion p span{
+    color: rgb(122, 120, 120);
+}
